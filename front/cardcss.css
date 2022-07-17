@@ -1,0 +1,97 @@
+*{
+    /* 初始化 */
+    margin: 0;
+    padding: 0;
+} 
+header{
+    position:fixed;
+    top:30px;
+    align-items: center;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#f6e2db,#e5bdb0);
+    
+   
+    
+}
+
+.container{
+    position: relative;
+    display: flex;
+    top:50px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+  
+    
+
+    
+}
+.box{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background-color: #857d7d;
+    border-radius: 5px;
+    margin: 30px 15px;
+    padding: 20px 15px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+
+
+}
+.box:hover{
+    height: 350px;
+}
+
+
+
+.imagepart{
+    position: relative;
+    height: 260px;
+    width: 260px;
+    border-radius: 5px;
+    overflow: hidden;
+    top: -60px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.imagepart img{
+    width: 100%;
+}
+
+.textpart{
+    position: relative;
+    margin-top: -250px;
+    padding: 10px 15px;
+    text-align: center;
+    
+    transition: 0.3s ease-in-out;
+}
+
+.textpart p{
+
+    line-height: 35px;
+    margin-top: 10px;
+    font-size: 15px;
+    color: rgb(255, 243, 243);
+}
+
+.textpart h2{
+    color: rgb(255, 243, 243);
+
+}
+
+.box:hover .textpart{
+    margin-top: -60px;
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.2s;
+}
